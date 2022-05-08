@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:clickable="true"
+    android:layout_marginEnd="12dp"
+    android:layout_marginStart="12dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    app:cardCornerRadius="15dp"
+    android:background="@drawable/item_background"
+    app:rippleColor="@color/purple_500"
+    android:layout_height="85dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvFirstChar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="12dp"
+            android:background="#eee"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:textColor="@color/purple_500"
+            android:textSize="25sp"
+            android:textStyle="bold|italic"
+            tools:text="A" />
+
+        <TextView
+            android:id="@+id/tvFullName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tvFirstChar"
+            android:layout_alignBottom="@+id/tvFirstChar"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="18dp"
+            android:layout_toEndOf="@+id/tvFirstChar"
+            android:textColor="@color/purple_500"
+            android:textSize="20sp"
+            tools:text="alireza abdolmaleki" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvCourse"
+            tools:text="Android"
+            android:textColor="@color/purple_500"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="12dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignTop="@+id/tvFullName"
+            android:layout_toEndOf="@+id/tvFirstChar"
+            android:background="#eee"
+            android:layout_marginTop="25dp"
+            android:textSize="14sp"
+            android:layout_marginEnd="18dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:id="@+id/ivScore"
+            android:src="@drawable/ic_baseline_graphic_eq_24"
+            android:tint="@color/purple_500"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/tvPoint"
+            tools:text="155"
+            android:textColor="@color/purple_500"
+            android:layout_alignTop="@+id/ivScore"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="12dp"/>
+
+
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>
